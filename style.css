@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url("./img/bg-banner.jpg");
+    background-position:bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: #000000b0;
+    color: white;
+    padding: 2em;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seaechBar{
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 110%;
+    width: calc(100% - 45px);
+}
+button{
+    margin: 0.5em;
+    border-radius: 20%;
+    border: none;
+    height: 52px;
+    width: 52px;
+    outline: none;
+    cursor: pointer;
+    background-color: #7c7c7c2b;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    background-color: #7c7c7c6f;
+}
+.city{
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.temp{
+    margin-top: 10px;
+}
