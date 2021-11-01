@@ -66,4 +66,22 @@ button:hover{
 }
 .temp{
     margin-top: 10px;
+    font-size: 55px ;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
+}
+.desc{
+    font-size: 20px ;
+    font-weight: 700; 
+    color: chartreuse;
+    padding-bottom: 10px;
+}
+.humidity{
+    font-size: 18px ;
+    font-weight: 600; 
+}
+.wind{
+    font-size: 18px ;
+    font-weight: 600; 
 }
