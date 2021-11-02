@@ -1,23 +1,40 @@
-var button = document.querySelector(".btn");
-var seaechInput = document.querySelector(".seaechBar");
-var city = document.querySelector(".city");
-var temp = document.querySelector(".temp");
-var desc = document.querySelector(".desc");
-var humidity = document.querySelector(".humidity");
-var wind = document.querySelector(".wind");
+async function getCity(){
+    const city = await fetch('https://ipapi.co/json/');
+    const data = await city.json();
 
-button.addEventListener('click', function (){
-    fetch('api.openweathermap.org/data/2.5/weather?q='+seaechInput.value+'&appid=8c79d34472050cd15b497ef00d4b3b48')
+    return data;
+}
 
-    .then(response => response.json())
-    .then(data => {
-        var nameValue = data ['name'];
-        var tempValue = data ['main', 'temp'];
-        var descValue = data ['weather'][0]['description'];
-    })
+getCity().then(data =>{
 
-    .catch(arr => alert("wromg city name"))
-})
+    document.querySelector('.city').textContant = data;
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// button.addEventListener('click', function (){
+//     fetch('api.openweathermap.org/data/2.5/weather?q='+seaechInput.value+'&appid=8c79d34472050cd15b497ef00d4b3b48')
+
+//     .then(response => response.json())
+//     .then(data => {
+//         var nameValue = data ['name'];
+//         var tempValue = data ['main', 'temp'];
+//         var descValue = data ['weather'][0]['description'];
+//     })
+
+//     .catch(arr => alert("wromg city name"))
+// })
 
 
 
